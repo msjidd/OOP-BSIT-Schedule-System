@@ -3,7 +3,7 @@
 ?>
     </main>
     <footer class="site-footer">
-        <span>© 2026 BSIT Schedule System. All Rights Reserved.</span>
+        <span>© 2026 Academic Schedule Management System. All Rights Reserved.</span>
     </footer>
 </body>
 </html>
