@@ -7,47 +7,131 @@ require_once __DIR__ . '/classes/LaboratorySchedule.php';
 
 $pageTitle = 'Dashboard';
 $activePage = 'home';
+
 include __DIR__ . '/includes/header.php';
 ?>
 
+<!-- ==============================
+     WELCOME SECTION
+     ============================== -->
+
 <div class="hero">
-    <h1><b>Welcome</h1>
-    <p>Manage your academic schedules in one place. Create, update, and organize class, laboratory, and examination schedules quickly and efficiently for the 1st Semester.
+    <h1>Welcome</h1>
+
+    <p>
+        Your academic schedule, organized in one place.
+        Easily manage class, laboratory, and examination schedules
+        for a more organized and productive semester.
     </p>
 </div>
+
+
+<!-- ==============================
+     SYSTEM OVERVIEW
+     ============================== -->
 
 <div class="card">
     <h2>System Overview</h2>
+
     <p class="lead">
-    The BSIT Class Schedule System is designed to help organize academic schedules for the semester. Users can create and manage class, laboratory, and examination schedules through an easy-to-use interface, making schedule planning faster, clearer, and more organized.
+        The Academic Schedule Management System (ASMS) is a web-based
+        system designed to organize and manage academic schedules.
+        It allows users to create, view, and manage class, laboratory,
+        and examination schedules efficiently, making schedule planning
+        simple, clear, and convenient.
     </p>
 </div>
 
-<div class="grid">
-    <div class="feature">
-        <div class="icon">&#127891;</div>
-        <h3>Class Schedule</h3>
-        <p>Regular lecture sessions with assigned rooms and credit units.</p>
-        <a href="create_schedule.php" class="btn btn-block">Create Class</a>
-    </div>
-    <div class="feature">
-        <div class="icon">&#128221;</div>
-        <h3>Exam Schedule</h3>
-        <p>Periodical examinations with exam type and grading period.</p>
-        <a href="create_schedule.php" class="btn btn-block">Create Exam</a>
-    </div>
-    <div class="feature">
-        <div class="icon">&#128300;</div>
-        <h3>Laboratory Schedule</h3>
-        <p>Hands-on lab sessions with equipment and lab room details.</p>
-        <a href="create_schedule.php" class="btn btn-block">Create Lab</a>
-    </div>
-</div>
+
+<!-- ==============================
+     QUICK ACTION BUTTONS
+     ============================== -->
 
 <div class="btn-container">
-    <a href="#" class="btntop">View All Schedules</a>
-    <a href="#" class="btntop secondary">Create a Schedule</a>
+
+    <a href="view_schedule.php" class="btntop">
+        View All Schedules
+    </a>
+
+    <a href="create_schedule.php" class="btntop secondary">
+        Create a Schedule
+    </a>
+
 </div>
+
+
+<!-- ==============================
+     SCHEDULE FEATURES
+     ============================== -->
+
+<div class="grid">
+
+    <!-- CLASS SCHEDULE -->
+
+    <div class="feature">
+
+        <div class="icon">
+            &#127891;
+        </div>
+
+        <h3>Class Schedule</h3>
+
+        <p>
+            Manage regular lecture sessions with course,
+            instructor, room, schedule, and credit unit details.
+        </p>
+
+        <a href="create_schedule.php" class="btn btn-block">
+            Create Class
+        </a>
+
+    </div>
+
+
+    <!-- EXAM SCHEDULE -->
+
+    <div class="feature">
+
+        <div class="icon">
+            &#128221;
+        </div>
+
+        <h3>Exam Schedule</h3>
+
+        <p>
+            Organize periodical examinations by exam type,
+            subject, schedule, room, and grading period.
+        </p>
+
+        <a href="create_schedule.php" class="btn btn-block">
+            Create Exam
+        </a>
+
+    </div>
+
+
+    <!-- LABORATORY SCHEDULE -->
+
+    <div class="feature">
+
+        <div class="icon">
+            &#128300;
+        </div>
+
+        <h3>Laboratory Schedule</h3>
+
+        <p>
+            Manage hands-on laboratory sessions with laboratory
+            rooms, equipment, schedules, and other details.
+        </p>
+
+        <a href="create_schedule.php" class="btn btn-block">
+            Create Laboratory
+        </a>
+
+    </div>
+
 </div>
+
 
 <?php include __DIR__ . '/includes/footer.php'; ?>

@@ -137,13 +137,13 @@ $data   = isset($_GET['data']) ? json_decode($_GET['data'], true) : [];
                         ?>
                     </select>
                 </div>
-                <div class="form-group">
-                    <label for="has_time_limit">
-                        <input type="checkbox" id="has_time_limit" name="has_time_limit" value="1"
-                               <?php echo !empty($data['has_time_limit']) ? 'checked' : ''; ?>>
-                        Has a time limit
-                    </label>
-                </div>
+                <div class="form-group checkbox-group">
+    <label for="has_time_limit">
+        <input type="checkbox" id="has_time_limit" name="has_time_limit" value="1"
+            <?php echo !empty($data['has_time_limit']) ? 'checked' : ''; ?>>
+        <span>Has a time limit</span>
+    </label>
+</div>
             </div>
         </div>
 

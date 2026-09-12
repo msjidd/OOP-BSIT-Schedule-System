@@ -14,7 +14,7 @@ $activePage = isset($activePage) ? $activePage : 'home';
         <nav class="nav">
         <div class="brand">
         <img src="assets/images/bsitlogo.jpg" alt="BSIT Logo" class="logo">
-    <span>BSIT Schedule System</span>
+    <span>Academic Schedule Management System</span>
 </div>
             <div class="nav-links">
                 <a href="index.php" class="<?php echo $activePage === 'home' ? 'active' : ''; ?>">Dashboard</a>
